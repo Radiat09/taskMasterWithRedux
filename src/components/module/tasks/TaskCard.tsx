@@ -18,8 +18,8 @@ export default function TaskCard({ task }: IProps) {
             className={cn("size-3 rounded-full cursor-pointer", {
               "bg-green-500": task.isCompleted === true,
               "bg-red-500": task.priority === "High",
-              "bg-yellow-600": task.priority === "Medium",
-              "bg-yellow-300": task.priority === "Low",
+              "bg-yellow-300": task.priority === "Medium",
+              "bg-yellow-600": task.priority === "Low",
             })}
           ></div>
           <h1>{task.title}</h1>

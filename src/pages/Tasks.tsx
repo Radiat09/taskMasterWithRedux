@@ -14,8 +14,8 @@ export default function Tasks() {
         <AddTaskModal />
       </div>
       <div className="space-y-5 mt-5">
-        {tasks.map((task) => (
-          <TaskCard task={task} key={task.id} />
+        {tasks.map((task, i) => (
+          <TaskCard task={task} key={task.id || i} />
         ))}
       </div>
     </div>
